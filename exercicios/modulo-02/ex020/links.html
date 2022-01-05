@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        
+        a:visited {
+            color: rgb(177, 0, 0);
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .legal:active{
+            color: rgb(255, 251, 0);
+        }
+        a::after {
+            content: "<";
+        }
+        a::before {
+            content: ">";            
+        }
+        .esp::before{
+            content: "Pokemon>>";
+            color: blue;
+        }
+        .esp::after{
+            content: "<<Pokemon";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_black" rel="netx" class="legal">Repositorio</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemVídeo">Curso em Video</a></li>
+        <li><a href="https://www.cursoemvideo.com">Curso em video</a></li>
+    </ul>
+    <p class="esp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi placeat tenetur ratione illo fuga, incidunt, itaque facilis sequi veritatis, recusandae maiores. Accusantium inventore fuga consectetur eaque consequatur vel assumenda officiis?</p>
+</body>
+</html>

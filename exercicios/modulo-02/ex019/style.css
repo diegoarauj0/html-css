@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: #689be9;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1 {
+    color: #0b0f66;
+    font-weight: bolder;
+    font-style: italic;
+}
+h2 {
+    color: #0b0f66;
+}
+h3 {
+    color: #0b0f66;
+}
+p {
+    color: #fce835;
+    font-family: fantasy;
+    font-size: 1.5em;
+}
+
+h1#Prin {
+    text-align: right;
+    background-color: #fce835;
+}
+
+.oi {
+    background-color: #4c00ff;
+    font-weight: bold;
+}
