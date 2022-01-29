@@ -21,11 +21,12 @@ header {
     color: white;
     text-align: center;
     padding: 20px;
+    outline: 2px solid gold;
     
 }
 header > h1 {
     font-family: var(--fontDec);
-    font-size: 10em;
+    font-size: 10vw;
     font-variant: small-caps;
 }
 a {
@@ -39,20 +40,29 @@ a:hover {
 
 section {
     font-family: var(--fontNor);
-    font-size: 3em;
+    font-size: 3vw;
 }
 section.normal {
     padding: 30px;
-
     background-color: white;
-}
+    
 
+}
+section.imagem {
+    outline: 3px solid gold;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.575);
+    
+
+}
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(43, 43, 43, 0.719);
     display: inline-block;
     color: white;
     margin: 20px;
     padding: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    border-radius: 9px;
+    text-shadow: 1px 1px 2px black;
 
 }
 
@@ -70,9 +80,10 @@ footer {
     text-align: center;
     background-color: black;
     color: white;
-    font-size: 1.3em;
+    font-size: 2.3vw;
     font-weight: 500;
     padding: 10px;
     margin-top: 100px;
+    outline: 2px solid gold;
 }
 
