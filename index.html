@@ -45,10 +45,10 @@
             color: black;
         }
         div > ul > a > li:hover {
+            transition: 0.4s;
             color: white;
-            -webkit-text-stroke-width: 0.8px;
-            -webkit-text-stroke-color: rgb(0, 0, 0);
             text-shadow: 1px 1px 3px black;
+            
         }
         main > h2 {
             text-transform: uppercase;
@@ -72,14 +72,20 @@
             font-weight: 700;
             padding: 0px 90px;
             border-radius: 10px;
-            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.356);
+            box-shadow: 1px 1px 3px rgba(170, 105, 105, 0.356);
 
         }
         div > ul > a > li {
+            transition: 0.4s;
             padding: 5px 0px;
             color: black;
             -webkit-text-stroke-width: 0.4px;
             -webkit-text-stroke-color: rgb(88, 0, 0);
+            background-color: var(--cor1);
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 1px 1px 3px black;
         }
         footer {
             background-image: linear-gradient(to bottom, var(--cor1), #df7e77);
@@ -97,8 +103,8 @@
             color: var(--cor2);
 
         }
-        footer > p > a:hover {
-            text-decoration: underline;
+        footer > p :hover {
+            color: rgb(204, 204, 204);
         }
     </style>
     <link rel="shortcut icon" href="cornmanthe3rd-plex-other-html-5.ico" type="image/x-icon">
