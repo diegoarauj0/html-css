@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --Cor1:#2693BA;
+    --Cor2:#0d1a50;
+    --Cor3:#1FD0D1;
+    --Cor4:#333333;
+}
+@keyframes Aparece {
+    to {
+        transform: scale(1);
+    }
+    from {
+        transform: scale(0.1);
+    }
+}
+/*Barra Rolagem*/
+body::-webkit-scrollbar {
+    width: 16px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--Cor2);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+body {
+    background-image: url("../exercicios/modulu-03/ex022/img/wallpaper006.jpg");
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    background-color: var(--Cor4);
+    max-width: 800px;
+    min-height: 660px;
+    margin: auto;
+    box-shadow: -1px 6px 13px #0000008a;
+}
+
+header {
+    background-color: var(--Cor2);
+    text-align: center;
+    padding: 7px;
+    font-size: 2em;
+    color: #fff6df;
+    font-family: 'Sigmar One', Arial, Helvetica, sans-serif;
+    border-bottom: 2px solid white;
+}
+header > h1 {
+    margin-bottom: 10px;
+}
+nav {
+    margin-bottom: 17px;
+    text-align: justify;
+    background-color: var(--Cor2);
+    outline: 2px solid white;
+}
+nav > h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    background-color: var(--Cor1);
+    box-shadow: 1px 1px 3px black;
+}
+nav > ul {
+    list-style: none;
+
+}
+nav > ul > li {
+    animation: Aparece 0.7s;
+    transition: 0.4s;
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+nav > ul > li > a {
+    text-decoration: none;   
+    letter-spacing: 4px;
+    color: white;
+    text-align: center;
+}
+nav > ul > li:hover {
+    transition: 0.4s;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--Cor1);
+    text-align: center;
+    padding: 5px 0px;
+    outline: 2px solid white;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+footer > a {
+    text-decoration: none;
+    color: black;
+}
+footer > a:hover {
+    color: white;
+}
