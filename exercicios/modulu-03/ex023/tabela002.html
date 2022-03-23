@@ -11,65 +11,109 @@
         }
         table {
             border-collapse: collapse;
+            position: relative;
         }
-        thead, tfoot {
+        tfoot {
             background-color: gray;
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(48, 48, 48);
+            color: white;
+            border-bottom: 3px solid black;
         }
         td, th {
             border: 2px solid black;
             padding: 10px;
             text-align: center;
         }
+        caption {
+           padding: 10px;
+           font-weight: 700;
+           background-color: gray; 
+           color: white;
+           border-radius: 5px 5px 0px 0px;
+        }
+        tbody > tr:nth-child(2n) { 
+            background-color: gray;
+            color: white;
+            box-shadow: inset 3px 1px 8px #000000a3;
+        }
     </style>
 </head>
 <body>
     <h1>Tabela Grande</h1>
     <table>
+        <caption>População dos estados do brasil</caption>
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th> 
-                <th>Porcentagem</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th> 
+                <th scope="col">Porcentagem</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>1</td>
                 <td>São Paulo</td>
-                <td>41.262.199</td>
-                <td>27,9%</td>
+                <td>46 649 132</td>
+                <td>21,9%</td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>Minas Gerais</td>
-                <td>19.597.330</td>
+                <td>21 411 923</td>
                 <td>10,1%</td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>Rio De Janeiro</td>
-                <td>15.989.929</td>
+                <td>17 463 349</td>
                 <td>8,2%</td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>Bahia</td>
-                <td>14.016.906</td>
+                <td>14 985 284</td>
                 <td>7,1%</td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>Paraná</td>
-                <td>10.444.526</td>
+                <td>11 597 484</td>
                 <td>5,4%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grande do Sul</td>
+                <td>11 466 630</td>
+                <td>5,4%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Pernambuco</td>
+                <td>9 674 793</td>
+                <td>4,5%</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Ceará</td>
+                <td>9 240 580</td>
+                <td>4,3%</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Pará</td>
+                <td>8 777 124</td>
+                <td>4,1%</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <td>*</td>
-                <th>Total</th>
+                <th scope="row" colspan="2">Total</th>
                 <td><strong>101.310.890</strong></td>
             </tr>
         </tfoot>
