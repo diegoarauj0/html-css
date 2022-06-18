@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe {
+            width: 600px;
+            height: 300px;
+            border: 3px solid black;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
+        }
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Escolher</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat aperiam officiis minus? Enim quibusdam natus esse, error neque sit temporibus distinctio, molestiae dolorem illo tempora deleniti doloremque dolor odit inventore.</p>
+
+    <ul>
+        <li><a href="Pag/Pag001.html" target="Tela">Dia</a></li>
+        <li><a href="Pag/Pag002.html" target="Tela">Tarde</a></li>
+        <li><a href="Pag/Pag003.html" target="Tela">Noite</a></li>
+    </ul>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A eligendi laborum maxime qui repellendus ad mollitia quam beatae quia sunt harum molestias, tempore at alias doloremque cumque omnis unde quibusdam!</p>
+
+    <div>
+        <iframe name="Tela" src="" frameborder="1" srcdoc="<h1 style='font-family: Arial, Helvetica, sans-serif; text-align:center;'>Aperte Uma das Opções Acima</h1>">
+            <p>Navegador Não Compativel (+_+)</p>
+        </iframe>
+    </div>
+</body>
+</html>
